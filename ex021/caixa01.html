@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: darkgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkcyan;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin: 20px auto 40px auto;
+        }
+        a {
+            border: 5px solid blueviolet;
+            padding: 10px;
+            margin: 10px 20px 40px 10px;
+            outline: 10px dashed salmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Os parágrados também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+    <p>Utilizando o display: inline. o box-level passa a ser inline-level, e vice e versa.</p>
+    <p>Padding é espaçamento entre o conteúdo e a borda. O outline fica entre a margem borda e a margem.</p>
+    <p>Quando as propriedades dos parâmetros margin, padding e etc. forem iguais(top, right, bottom e left), podem ser abreviadas no mesmo parametro.</p>
+    <p>Exemplo não abreviado: margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;</p>
+    <p>Exemplo abreviado: margin: 10px 10px 10px 10px;. E se forem do mesmo valor, não precisam ser repetidos. Ex: margin 10px;</p>
+    <p>No caso do border, os mais utilizados são width, style e color, exemplo: border-width: 5px;
+            border-style: solid;
+            border-color: blueviolet;</p>
+    <p>Modo abreviado: border: 5px solid blueviolet;. O mesmo serve pro outline. Para deixar a margem centralizada automaticamente utilizamos 'auto' em right e left.</p>
+</body>
+</html>

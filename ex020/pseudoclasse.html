@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <h1>Pseudo-classes</h1>
+    Pseudo-classes , elas precisam e são relativas a um elemento ou uma classe, elas são relacionadas ao ESTADO de um determinado ELEMENTO . No CSS, as Pseudo-classes são representadas por "dois pontos" ( : )
+    Para usar as funcionalidades de Pseudo-classes, no código CSS, devemos abrir um seletor personalizado para o elemento que queremos determinar um estado, digitando "dois pontos" ( : ) e especificando o estado desejado, abrindo chaves posteriormente. 
+    Alguns exemplos de ESTADOS de elementos (Pseudo-classes) são: Ativo, Marcado, Vazio, Habilitado e etc. 
+    Existe um estado (Pseudo-classe) chamado "hover" (hover é uma Pseudo-classe que é compatível com vários elementos), que significa: "quando eu passar o mouse por cima", quando estamos com alguma coisa por cima dele.
+    Exemplo de elemento com Pseudo-classe:  div:hover {background-color: brown;}
+    <h2>Divs</h2>
+    <p>No HTML, temos a tag "div", ela não tem uma função específica, serve apenas para demarcar um espaço qualquer dentro da nossa página. Podemos escrever textos dentro das tag div's... Como padrão, se tiver mais de uma, as div's ficam dispostas uma em cada linha, uma embaixo da outra, sendo que elas ocupam uma área que pega a largura inteira do navegador, de ponta à ponta. Podemos mudar a altura e largura das div's com as Propriedades de Estilo "Height" e "Width", também conseguimos mudar a posição dos textos nas div's com a Propriedade text-align, sendo que podemos adicionar bordas às div's com a Propriedade "border" com o valor "solid".</p>
+    <p>Nota: Ao utilizar a Propriedade de Estilo "border", devemos primeiro inserir o valor da espessura da borda em px, depois o tipo de borda (ex: solid) e posteriormente a sua cor. Exemplo de shorthand para bordas em CSS: " border: 1px solid black; "</p>
+    <p>Como foi dito anteriormente, por padrão as div's ficam alinhadas uma em cima da outra, mas se quisermos que fiquem uma do lado da outra, devemos usar a Propriedade de Estilo "display" com o valor "inline-block", que seria um alinhamento de bloco em linha, assim fica tudo na mesma linha.</p>
+</body>
+</html>

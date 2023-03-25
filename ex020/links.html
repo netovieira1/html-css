@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        a:visited {
+            color: red
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blueviolet;
+        }
+        a::after {
+            content: ' link';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+    <p>Pseudo-Classes são palavras que definem estados de elementos dentro da HTML. São representadas por ' : '(dois pontos)</p>
+    <p>Exemplo de Pseudo-Classe em CSS é a tag 'a' utilizada para links. Ex: a:visited{color: red;} altera a cor do link já visitado.</p>
+    <p>a:hover{color: black; text-decoration: underline;} altera a cor do link ao passar o cursor do mouse em cima e fica sublinhado a:active {color: blueviolet;} muda a cor ao passar segurar o click do mouse sobre o link.</p>
+    <p>Pseudo-Elementos podem agir nas classes, elementos, id etc. Eles mexem diretamente no conteúdo periférico do elemento e são representados por ' :: '(dois pontos duplo).</p>
+    <p>Exemplo de Pseudo-Elementos: a::after {content: ' link'} adiciona a palavra 'link' depois do link.</p>
+    
+</body>
+</html>

@@ -1,0 +1,979 @@
+        Anotações HTML5 e CSS3
+Ex002.
+<p>Abaixo você vai ver  uma imagem que está na mesma pasta</p>
+    <img src="logo-html-200.png" alt="logo HTML5">
+    <p>Podemos também carregar imagens que estão em sub-pastas</p>
+    <img src="imagens/logo-css-200.png" alt="logo CSS3">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="logo JavaScript"> <!--URL-->
+
+Ex.003
+        Testando carga de imagens</h1>
+    <p>Abaixo você vai ver  uma imagem que está na mesma pasta</p>
+    <img src="logo-html-200.png" alt="logo HTML5">
+    <p>Podemos também carregar imagens que estão em sub-pastas</p>
+    <img src="imagens/logo-css-200.png" alt="logo CSS3">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="logo JavaScript"> <!--URL-->
+Ex.004
+ <link rel="shortcut icon" href="cursoemvideo.ico.ico" type="image/x-icon">
+    <title>Teste Favicon</title>
+</head>
+<body>
+    <h1>Olha o favicon aqui em cima</h1>
+
+Ex.008
+    <title>Formatação de texto</title>
+    <style>
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b> utilizando a tag b (não semântica)</p>
+    <p>Nesta frase, temos um <strong>termo de destaque</strong> usando a  tag STRONG (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag 'i' (não semântica)</p>
+    <p>Nesta frase, temos uma <em>ênfase em itálico</em> usando a tag 'em' (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos <mark>marcar um texto</mark> utilizando a tag 'mark'</p>
+    <p>E no outro parágrafo, <mark>outro texto marcado</mark> no final</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> com a tag 'big' que já esta obsoleta. E um <small>texto pequeno</small> com a tag 'small', ainda em uso</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois</p>
+    <p>Existe também o <u>sublinhado</u> com a tag 'u'. (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo h<sup>20</sup>+3. <sup>Pequenino</sup></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisa do tipo H<sub>2</sub>0</p>
+</body>
+
+Ex.008b
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Código-fonte / Pré-formatação</h1>
+    <p>O comando <code>document.getElementbyId('teste')</code> é escrito em linguagem JavaScript</p>
+<pre> <!--A tag 'pre' formata o texto de acordo com as quebras de linha-->
+<code>
+num = int(input('Digite um número: '))
+if num % 2 == 0:
+    print(f'O número {} é PAR.')
+else:
+    print(f'O número {} é ÍMPAR')
+print('Fim do programa')
+</code>
+</pre>
+<h2>Citações simples</h2>
+<p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>
+A tag 'q' (quote) é uma citação, ou seja, utiliza as aspas.</p>
+<h2>Citações completas</h2>
+<p>Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML5 e CSS:</p>
+<blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+    Uma tag HTML é constituida por uma ou mais letras, ou letra e número que devem ser escritas entre os sinais &lt; e &gt; 
+</blockquote>
+<p>A tag 'blockquote' cria citações em bloco e colocando o parametro 'cite' dentro da tag vc pode colocar o link de endereço daquela citação</p>
+<h2>Abreviações</h2>
+<p>a tag 'abbr' serve pra indicar o significado de uma abreviação</p>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl">Só inverte o texto, não serve pra nada.</bdo> O parâmetro rtl = right to left e ltr = left to right</p>
+    
+</body>
+
+Ex.009
+
+<title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>utilizamos a tag 'ol'(ordered lists) para criar listas ordenadas e dela utilizamos a tag 'li'(listed itens) para indicar quais serão os itens </p>
+    <p>Podemos colocar parâmetros como: 'type'(aA, 1, iV) e 'start'(1,2,3...)</p>
+    <ol type="I" start="1"> 
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+
+    </ol>
+    <h2>Lista não Ordenadas</h2>
+    <p>Utilizamos a tag 'ul'(unordered list) e os tipos são: disc(padrão), square e circle</p>
+    <ul type="disc">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>SNES</li>
+            <ul type="square">
+                <li>Super Star Soccer</li>
+                <li>Megaman X</li>
+                <li>Donkey Kong</li>
+            </ul>
+        <li>PS1</li>
+            <ul type="square">
+                <li>Yu-gi-Oh</li>
+                <li>Resident Evil 3</li>
+                <li>Winning Eleven</li>
+            </ul>
+        <li>PS2</li>
+            <ul type="square">
+                <li>Shadow of Rome</li>
+                <li>Resident Evil 4</li>
+                <li>Def Jam Fight for NY</li>
+            </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <p>Utilizamos a tag 'dl', dentro dela usamos a tag 'dt'(termos) e dentro de 'dt' usamos a tag 'dd'(definição). Então a tag 'dd' serve definir a tag  'dt'.</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+</body>
+
+Ex010.
+
+<title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar link um externo, como por exemplo, um <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público</a> de github.</p>
+    <p>Usando a tag 'a'(anchor), o parâmetro 'href' para referenciar o link e os parâmetros target ="_blank" e rel ="external" para abrir em uma nova aba sem que o seu site seja fechado. O parâmetro target ="self" indica que aquela página que irá ser clicada, pertence ao meu site.</p>
+    <p>Você pode acessar também um <a href="https:/youtube.com/cursoemvideo/" target="_blank" rel="external">link do YouTube</a>.</p>
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do meu site. Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+    <p>os parâmetros 'next' e 'prev' servem para indica para o site de busca qual página é a anterior ou próxima à mesma.</p>
+    <p>Você pode acessar também a nossa <a href="noticias/pag003.html">página de notícias</a>.</p>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/livro.pdf" download="livro.pdf">Baixar o link para PDF</a></li>
+        <li><a href="livro/livro.rar">Baixar livro compactado em rar</a></li>
+    </ul>
+</body>
+
+<title>Página 02</title>
+</head>
+<body>
+    <h1>Esta é a segunda página do meu site.</h1>
+    <p>A segunda página está aqui.</p>
+    <p>Está página é um oferecimento <a href="https://www.hostnet.com.br/" target="_blank" rel="nofollow">Hostnet</a>.</p>
+    <p>O "nofollow" no parâmetro 'rel' indica que o meu site não da o aval para que o site em destaque seja seguido, isso é utilizado quando o site referido não é confiável</p>
+    <p>Voltar para a <a href="index.html" rel="prev">primeira página</a></p>
+    
+</body>
+
+Ex011
+
+<h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimunua o tamanho do seu navegador.</p>
+    <p>Usando a tag 'picture' pode-se adicionar uma imagem com a tag 'img'
+    Depois usa-se a tag 'source:media:type',no parametro de 'media' usa-se
+    o max-width(vem o min como padrão), e deixa '1050px' que é o tamanho máximo de uma imagem de 'tamanho m', mais que isso altomaticamente a imagem será 'tamanho g' (imagem original) na barra de rolagem do site, e se for 'max width 750', automaticamente muda para a 'imagem p'.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Utilizamos a tag 'audio' e em src o nome do arquivo, o parâmetro 'controls' mostra as opções de volume, pause etc. O parâmetro 'autoplay' toca o áudio assim que a página é carregada</p>
+    <audio src="midia/Ringside - Dyalla.mp3"controls ></audio>  
+</body>
+
+Ex012
+
+<title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p>Utilizamos a tag 'video' e o parâmetro 'source:type'. De preferência utiliza-se o mesmo video com formatos diferentes, porque cada navegador tem suas compatibilidades com cada arquivo. E ele vai executando um de cada vez na ordem em que foi escrito até achar um compatível com o navegador. O parâmetro 'controls' mostra as opções de pause, volume e etc. A tag 'poster' adiciona uma thumbnail.</p>
+    
+    <video width="560" controls autoplay loop>
+       <source src="midia/video.mp4" type="video/mp4">
+       <source src="midia/video.m4v" type="video/m4p">
+       <source src="midia/video.ogv" type="video/ogg">
+       <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Para inserir vídeos externos basta clicar em compartilhar e depois incorporar</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/273764697?h=113c558fea&portrait=0" width="560" height="238" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+
+Ex013
+
+<title>Estilos inline</title>
+</head>
+<body style="background-color: lightblue; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+    <h1 style="color: mediumblue; text-align: center; font-size: 1.5em; background-color: dodgerblue;">Capítulo 1</h1>
+    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.1</h2>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In reiciendis sint beatae non. Ad magni ullam blanditiis consequatur magnam enim similique nam exercitationem numquam dignissimos quas, fuga perferendis amet recusandae.</p>
+    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.2</h2>
+    <p style="text-align: justify; text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore totam magnam enim eum odio laudantium consequuntur maiores velit nihil obcaecati quidem quo, dicta atque nemo amet beatae consectetur ullam?</p>
+    <h1 style="color: mediumblue; text-align: center; font-size: 1.5em; background-color: dodgerblue;">Capítulo 2</h1>
+    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.1</h2>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facilis ratione neque et nisi necessitatibus! Quibusdam hic velit quae. Dolorem asperiores assumenda distinctio voluptatem doloremque. Distinctio deleniti nam reprehenderit placeat.</p>
+    <h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.2</h2>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae atque cum voluptates officia culpa alias suscipit earum modi consequuntur fugiat, recusandae, nesciunt perspiciatis nihil unde animi nisi praesentium illo?</p>
+    </body>
+
+    Ex014
+
+ <title>Estilos Locais / Internos</title>
+    <style>
+        body{
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: mediumblue; background-color: yellowgreen;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <p>Para editar uma página em CSS, utiliza-se a tag 'style' dentro da tag 'Title', depois escreve-se as tags (h1, h2, p e etc.) e põ as declarações em chaves {} (color:{}, text-align:{}, font-size:{} e etc.)</p>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In reiciendis sint beatae non. Ad magni ullam blanditiis consequatur magnam enim similique nam exercitationem numquam dignissimos quas, fuga perferendis amet recusandae.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore totam magnam enim eum odio laudantium consequuntur maiores velit nihil obcaecati quidem quo, dicta atque nemo amet beatae consectetur ullam?</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facilis ratione neque et nisi necessitatibus! Quibusdam hic velit quae. Dolorem asperiores assumenda distinctio voluptatem doloremque. Distinctio deleniti nam reprehenderit placeat.</p>
+    <h2>Capítulo 2.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae atque cum voluptates officia culpa alias suscipit earum modi consequuntur fugiat, recusandae, nesciunt perspiciatis nihil unde animi nisi praesentium illo?</p>
+</body>
+
+Ex015
+
+ <title>Estilos Externos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <p>Para editar uma página em CSS, utiliza-se a tag 'style' dentro da tag 'Title', depois escreve-se as tags (h1, h2, p e etc.) e põ as declarações em chaves {} (color:{}, text-align:{}, font-size:{} e etc.)</p>
+    <p>Para editar através de um link externo, cria-se a tag 'link:css' em 'title'</p>
+    <p>As declarações em css inline (na linha), interna (na tag style), e externa (link:css) podem ser misturadas, a que prevalece como ordem prioridade é sempre a inline, interno e externo, externo é sempre o mais recomendado, os outros são mais pontuais.</p>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In reiciendis sint beatae non. Ad magni ullam blanditiis consequatur magnam enim similique nam exercitationem numquam dignissimos quas, fuga perferendis amet recusandae.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore totam magnam enim eum odio laudantium consequuntur maiores velit nihil obcaecati quidem quo, dicta atque nemo amet beatae consectetur ullam?</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur facilis ratione neque et nisi necessitatibus! Quibusdam hic velit quae. Dolorem asperiores assumenda distinctio voluptatem doloremque. Distinctio deleniti nam reprehenderit placeat.</p>
+    <h2>Capítulo 2.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae atque cum voluptates officia culpa alias suscipit earum modi consequuntur fugiat, recusandae, nesciunt perspiciatis nihil unde animi nisi praesentium illo?</p>
+    <p><a href="pagina02.html" target="_self">Ir para página 2</a></p>
+</body>
+
+<title>Segunda página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Segunda página</h1>
+<h2>Teste de estilos</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit eius labore perferendis doloribus, soluta maxime asperiores nisi! Minima ex repudiandae at! Ab qui alias nisi mollitia, dolor quidem. Maxime, unde.</p>
+<p><a href="index.html">Voltar</a></p>
+</body>
+
+@charset "utf-8";
+body{
+    background-color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: mediumblue; background-color: darkgoldenrod;
+}
+h2{
+    color: maroon;
+}
+p{
+    text-align: justify;
+}
+
+Ex016
+
+<title>Cores</title>
+</head>
+<body>
+    <h2 style="background-color: blue; color: white;">Exemplos de cores</h2>
+    <p>Representação das cores por nomes. Ex: blue, white</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda quas quis nisi obcaecati, eveniet mollitia possimus consequuntur labore voluptatem fugit pariatur quo provident vitae doloremque aliquid sed repellat? Amet!</p>
+    <h2 style="background-color: #0000ff;color: #ffffff;">Exemplos de cores</h2>
+    <p>Representação das cores por códigos hexadecimais. Ex: #0000ff(blue), #ffffff(white)</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda quas quis nisi obcaecati, eveniet mollitia possimus consequuntur labore voluptatem fugit pariatur quo provident vitae doloremque aliquid sed repellat? Amet!</p>
+    <h2 style="background-color: rgb(0, 0, 255);color: rgb(255, 255, 255);">Exemplos de cores</h2>
+    <p>Representação em códigos RBG. Ex: (0, 0, 255), (255, 255, 255)</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda quas quis nisi obcaecati, eveniet mollitia possimus consequuntur labore voluptatem fugit pariatur quo provident vitae doloremque aliquid sed repellat? Amet!</p>
+    <h2 style="background-color: hsl(240, 100%, 50%);color: hsl(0, 0%, 100%);">Exemplos de cores</h2>
+    <p>Representação de cores por hsl(hue, saturation, lightness). Ex: "background-color: hsl(240, 100%, 50%);color: hsl(0, 0%, 100%);"</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda quas quis nisi obcaecati, eveniet mollitia possimus consequuntur labore voluptatem fugit pariatur quo provident vitae doloremque aliquid sed repellat? Amet!</p>
+    <h2 style="background-color: #0000ffab; color: white;">Exemplos de cores</h2>
+    <p>Representação de cores com transparência. Ex: rgba(0, 0, 255, 0.671), hsla(240, 100%, 50%, 0.671) ou #0000ffab</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda quas quis nisi obcaecati, eveniet mollitia possimus consequuntur labore voluptatem fugit pariatur quo provident vitae doloremque aliquid sed repellat? Amet!</p>
+</body>
+
+<title>Gradientes em CSS</title>
+    <style>
+            
+        
+        body{
+            background-image: linear-gradient(90deg, #73D1CC 30%, #1EDCD2 50%, #498582);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <p>Para criar gradientes no background, utiliza-se a tag 'background-image: linear-gradient'(to right, white, blue). Da esquerda para a direita branco, até ficar azul </p>
+    <p>o '*{} = Configurações globais do CSS. Deixar a altura 100%(height) é necessário para usar gradientes de cima pra baixo ou baixo pra cima.</p>
+</body>
+
+<title>Site de Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Site de Exemplo</h1>
+        <h2>Título 1</h2>
+        <p><main>	->	div especial, indica que o conteúdo é principal</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolores qui aliquam placeat atque, tenetur sequi magnam praesentium, ipsa delectus commodi nostrum consequatur nobis maiores eveniet recusandae maxime perspiciatis incidunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum debitis est rerum beatae harum exercitationem obcaecati veniam cupiditate maxime? Eligendi dolorem perferendis alias corrupti, consectetur molestias magni amet et earum?</p>
+        <h2>Título 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi aperiam culpa qui, quos totam nam libero, neque, doloribus exercitationem sapiente vel fuga esse alias? Quibusdam quos cumque inventore commodi quod!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis architecto ipsum illum consectetur iusto suscipit facere provident eius doloremque laboriosam dolore iste cupiditate rem repellendus neque praesentium, nihil cumque? Velit.</p>
+        <h2>Título 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis obcaecati molestiae, eius delectus excepturi id pariatur doloremque ducimus repellendus culpa libero sapiente minima aut quas nesciunt dolorem iste, ab fugiat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore totam accusamus esse autem minus doloremque temporibus obcaecati, hic error excepturi sint placeat molestiae laborum, consequatur accusantium ipsum. Laborum, repellat?</p>
+    </main>
+</body>
+
+@charset "UTF-8";
+
+*{  font-family: Arial, Helvetica, sans-serif;
+    height: 100¢;
+}
+
+body{
+    background-image: linear-gradient(to right, #F3E9C0, #e6a29a);
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px; /*Largura do background em relação ao main*/
+    margin: auto; /*Centraliza o main na tela*/
+    border-radius: 10%; /*Arredonda as bordas*/
+    box-shadow: 5px 5px 15px #e68176; /*Escurece a borda lateral, de baixo e espalha a cor*/
+}
+h1{
+    color: #f1998f;
+    text-align: center;
+    text-shadow: 1px 1px 2px #6b403b;
+}
+h2{
+    color: #A6B4E6;  
+}
+p {
+    text-align: justify;
+}
+
+Ex017
+
+<title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Medidas absolutas: cm, mm, in, px, pt, pc.</p>
+    <p>Medidas relativas: em, ex, rem, vw, vh, %.</p>
+    <p>'px' e 'em' são as mais recomendadas. 16px = 1em.</p>
+    <p>'shorthand font' tem que estar nessa odem:font-style -> font-weight -> font-size -> font-family.</p>
+    <p>Ex: Font: h1 {italic bolder 3em 'Work Sans', San-serif};</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum suscipit inventore error? Rem nisi neque quidem accusamus nulla repellendus, saepe veniam asperiores? Quo numquam unde tempore exercitationem, architecto delectus mollitia.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa recusandae obcaecati alias illum voluptatibus cumque facere impedit totam laboriosam veniam sequi ex exercitationem, possimus aut dicta quasi, expedita iste.</p>
+</body>
+
+<title>Alinhamentos</title>
+    <style>
+        body {
+            font: normal 16px Arial Verdana serif;
+            text-align: left;
+        }
+        h1 {text-align: center;}
+        h2 {text-align: right;}
+        p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Alinhamentos</h1>
+    <h2>Subtítulo</h2>
+    <p>text-indent é o espaçamento do parágrafo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, exercitationem neque dicta et, tenetur voluptates itaque odio officia sed repellendus odit consectetur iure alias provident totam iste autem labore doloremque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium beatae reiciendis dolorem modi ex, impedit odio repudiandae facere soluta, animi ullam! Voluptatem pariatur cupiditate maiores porro obcaecati nostrum aut.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quidem labore accusamus consectetur maiores quis qui, omnis illo distinctio. Cupiditate nemo suscipit eum rem soluta. Tempora, soluta consequuntur? Aut, eum?</p>
+</body>
+
+Ex018
+
+<title>Fontes com Google Fontes</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body{
+        font-family: 'Work Sans', Arial, Verdana, sans-serif;
+        
+    }
+    h1{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3em;
+    }
+    h2{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <h1>Importando fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim mollitia excepturi voluptate odio eius asperiores et. Amet magni repellat, cumque, iure sint labore debitis temporibus consequuntur aliquam quaerat maxime distinctio!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam et assumenda quibusdam delectus, sint architecto deserunt omnis optio? Voluptate quod est facere laboriosam modi architecto optio tenetur fugiat voluptatibus recusandae.</p>
+</body>
+
+<title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(fonts/love.larry.ttf.ttf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Para utilizar fontes baixadas, utiliza-se na tag 'style' o @font-face, dentro da url() o nome do arquivo em txt e o format().</p>
+    <p>Tipos de format(): opentype(otf), truetype(ttf), embedded-opentype, truetype-att (Apple Advanced Typography) e svg. Pode-se colocar mais de uma url.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt commodi fugiat mollitia minima laudantium soluta amet temporibus ullam aperiam accusantium sit molestias, cupiditate, consequatur, unde voluptatum impedit delectus quam autem.</p>
+    
+</body>
+
+Ex019
+
+<title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal">Criando sites com HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML básico</h2>
+    <p>Quando apenas uma única tag precisa ser modificada (ex:h1) sem alterar as outras, utiliza-se o parâmetro 'id' dentro da tag que precisa ser alterada e damos uma identificação a ela (ex: id="principal"). E para que essa tag seja modificada em CSS, utiliza-se o símbolo '#'. Ex: h1#principal(o h1 antes da # não é obrigatório). Só pode  existir um elemento por 'id', mas podem existir vários elementos com o 'class'</p>
+    <p>Para alterar mais de uma tag ao mesmo tempo utiliza-se o parâmetro 'class'(ex:class="basico"). Para essas tags serem modificadas em CSS, utiliza-se o ' . '(ponto). Ex: .basico</p>
+    <p>Em HTML é id = em CSS = #. Em HTML é class = em CSS é ' . ' (ponto).</p>
+    <p>Podem ser utilizadas mais de uma classe ou classe com id na mesma tag. Exemplo para mais de uma classe: h1 class="basico intermediario"(dentro das aspas separadas sem vírgulas).</p>
+    <p>Exemplo de classe com id: h1 class="basico" id="principal class="basico". A id sobrepõe a class.</p>
+    <h2 class="intermediario">HTML intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam consectetur placeat minima debitis a, voluptates, eum nulla praesentium quaerat accusantium quasi. Tempora repellendus officiis eum eaque repellat, blanditiis et?</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, sapiente numquam. Quam autem aspernatur hic quidem quos consequatur sapiente, sed architecto corporis vitae sunt. Facere tempore dolorem sed sequi rem.</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS básico</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, eligendi sapiente aliquid necessitatibus asperiores impedit non, nesciunt nam doloribus quia labore ab cum ad odio odit, quaerat totam enim delectus?</p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam provident maiores fugiat excepturi assumenda autem, itaque, eligendi illum sint accusantium quod corrupti numquam iste vel porro nemo rerum aspernatur modi!</p>
+    <h2 class="avancado">CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quaerat adipisci vero fugit voluptates enim ad debitis alias. Eveniet saepe commodi reprehenderit dignissimos magnam optio necessitatibus placeat adipisci odit nulla!</p>
+</body>
+
+@charset "UTF-8";
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2{
+    color: rgb(51, 77, 49);
+}
+
+.basico{
+    color: rgb(51, 77, 49);
+}
+.intermediario {
+    color: rgb(145, 151, 54)
+}
+.avancado {
+    color: rgb(204, 36, 36);
+}
+
+Ex020 
+
+<title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover {
+            background-color: red;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+    <h2>Hover</h2>
+    <p>Existe um estado (Pseudo-classe) chamado "hover" (hover é uma Pseudo-classe que é compatível com vários elementos), que significa: "quando eu passar o mouse por cima", quando estamos com alguma coisa por cima dele. Exemplo: div:hover{background-color: brown;}</p>
+    <p>Uma coisa legal que pode ser feita é inserir parágrafos (<p>) dentro de div's. Isso é enquadrado como um elemento dentro de outro elemento, e nesses casos, o elemento que está dentro é considerado " filho " ( children ) daquele que está fora (pai).
+
+        Em seletores CSS, se quisermos personalizar os elementos que estão dentro de outros elementos ( children ), devemos indicar o elemento "pai" e usar o símbolo de maior " > " para indicar o elemento filho ( children ) imediato a ele. Exemplo:
+        
+        div > p {
+                    display: none;
+                }
+        
+        A propriedade de estilo " display " com o valor " none " do exemplo acima faz com que os parágrafos que estejam dentro de div's ( ">" children ) fiquem com sua exibição oculta. Algo interessante que pode ser feito após isso, utilizando a Pseudo-Classe " hover ", é fazer com que o texto escondido apareça ao passarmos o mouse em cima da div.
+        
+        Para isso, abrimos um seletor para a div com a Pseudo-Classe hover (div:hover) e indicamos o seu filho (p) com o símbolo " > ", exemplo: " div:hover > p { }" e inserimos dentro a Propriedade de Estilo " display " com o valor " block ". Dessa forma, ao passarmos o mouse sobre a div, o texto escondido contido na tag "p" filho irá aparecer. Exemplo:
+        
+        div:hover > p {
+                    display: block;
+                    color: white;
+                    background-color: red;
+                    width: 300px;
+                }</p>
+</body>
+
+<title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        a:visited {
+            color: red
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blueviolet;
+        }
+        a::after {
+            content: ' link';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+    <p>Pseudo-Classes são palavras que definem estados de elementos dentro da HTML. São representadas por ' : '(dois pontos)</p>
+    <p>Exemplo de Pseudo-Classe em CSS é a tag 'a' utilizada para links. Ex: a:visited{color: red;} altera a cor do link já visitado.</p>
+    <p>a:hover{color: black; text-decoration: underline;} altera a cor do link ao passar o cursor do mouse em cima e fica sublinhado a:active {color: blueviolet;} muda a cor ao passar segurar o click do mouse sobre o link.</p>
+    <p>Pseudo-Elementos podem agir nas classes, elementos, id etc. Eles mexem diretamente no conteúdo periférico do elemento e são representados por ' :: '(dois pontos duplo).</p>
+    <p>Exemplo de Pseudo-Elementos: a::after {content: ' link'} adiciona a palavra 'link' depois do link.</p>
+    
+</body>
+
+<title>Pseudo-classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <h1>Pseudo-classes</h1>
+    Pseudo-classes , elas precisam e são relativas a um elemento ou uma classe, elas são relacionadas ao ESTADO de um determinado ELEMENTO . No CSS, as Pseudo-classes são representadas por "dois pontos" ( : )
+    Para usar as funcionalidades de Pseudo-classes, no código CSS, devemos abrir um seletor personalizado para o elemento que queremos determinar um estado, digitando "dois pontos" ( : ) e especificando o estado desejado, abrindo chaves posteriormente. 
+    Alguns exemplos de ESTADOS de elementos (Pseudo-classes) são: Ativo, Marcado, Vazio, Habilitado e etc. 
+    Existe um estado (Pseudo-classe) chamado "hover" (hover é uma Pseudo-classe que é compatível com vários elementos), que significa: "quando eu passar o mouse por cima", quando estamos com alguma coisa por cima dele.
+    Exemplo de elemento com Pseudo-classe:  div:hover {background-color: brown;}
+    <h2>Divs</h2>
+    <p>No HTML, temos a tag "div", ela não tem uma função específica, serve apenas para demarcar um espaço qualquer dentro da nossa página. Podemos escrever textos dentro das tag div's... Como padrão, se tiver mais de uma, as div's ficam dispostas uma em cada linha, uma embaixo da outra, sendo que elas ocupam uma área que pega a largura inteira do navegador, de ponta à ponta. Podemos mudar a altura e largura das div's com as Propriedades de Estilo "Height" e "Width", também conseguimos mudar a posição dos textos nas div's com a Propriedade text-align, sendo que podemos adicionar bordas às div's com a Propriedade "border" com o valor "solid".</p>
+    <p>Nota: Ao utilizar a Propriedade de Estilo "border", devemos primeiro inserir o valor da espessura da borda em px, depois o tipo de borda (ex: solid) e posteriormente a sua cor. Exemplo de shorthand para bordas em CSS: " border: 1px solid black; "</p>
+    <p>Como foi dito anteriormente, por padrão as div's ficam alinhadas uma em cima da outra, mas se quisermos que fiquem uma do lado da outra, devemos usar a Propriedade de Estilo "display" com o valor "inline-block", que seria um alinhamento de bloco em linha, assim fica tudo na mesma linha.</p>
+</body>
+
+Ex021 
+
+<title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: darkgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkcyan;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin: 20px auto 40px auto;
+        }
+        a {
+            border: 5px solid blueviolet;
+            padding: 10px;
+            margin: 10px 20px 40px 10px;
+            outline: 10px dashed salmon;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Os parágrados também são exemplos de box-level, mas os <a href="#"> links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+    <p>Utilizando o display: inline. o box-level passa a ser inline-level, e vice e versa.</p>
+    <p>Padding é espaçamento entre o conteúdo e a borda. O outline fica entre a margem borda e a margem.</p>
+    <p>Quando as propriedades dos parâmetros margin, padding e etc. forem iguais(top, right, bottom e left), podem ser abreviadas no mesmo parametro.</p>
+    <p>Exemplo não abreviado: margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;</p>
+    <p>Exemplo abreviado: margin: 10px 10px 10px 10px;. E se forem do mesmo valor, não precisam ser repetidos. Ex: margin 10px;</p>
+    <p>No caso do border, os mais utilizados são width, style e color, exemplo: border-width: 5px;
+            border-style: solid;
+            border-color: blueviolet;</p>
+    <p>Modo abreviado: border: 5px solid blueviolet;. O mesmo serve pro outline. Para deixar a margem centralizada automaticamente utilizamos 'auto' em right e left.</p>
+</body>
+
+<title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(184, 182, 182);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        h1 {
+            box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.301);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, 0.384);
+        }
+        article {
+            background-color: lightgrey;
+        }
+        article > aside {
+            background-color: rgb(128, 128, 128);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+            font-size: 12px;
+            font-style: italic;
+            
+        }
+        
+        nav {
+            background-color: darkgrey;
+            color: white;
+            box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.301);
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(133, 8, 8);
+        }
+        nav > a:hover {
+            color: white;
+            background-color: darkgray;
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Meu Site</h1>
+        
+        <nav>
+            <a href="#">Esporte</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Saúde</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Tags de um Site</h2>
+                <p>Todo site começa com cabeçalho, conteúdo e radapé, portanto utilizamos as seguintes tags respectivamentes: "header", "main" e "footer".</p>
+                <p>O cabeçalho(header) se começa pelo título 'h1' e por links de navegação, para isso utilizamos a tag 'nav(navigation) para os menus.</p>
+                <p>O conteúdo principal(main) pode-se colocar várias tags sem ordem específicas, as mais comuns são: "section", "article", "aside"(aside é um conteúdo periférico ao artigo). Artigos podem conter títulos, um "h2", por exemplo. Pode conter "articles" dentro de "section" e vice e versa.</p>
+                <p>CSS: Para colocar sombras nas boxes utilizamos o "boxshadow " representado da seguinte maneira: boxshadow: 2px 2px 6px 1px black; ou seja, 2px para os sombreamento horizontal(valor negativo pra esquerda, positivo direita), vertical(valor negativo pra cima, positivo pra baixo), px para o embaçamento(blur) e 1px para o espalhamento(spread) da sombra na cor black. É sempre bom utilizar a transparência na sombra.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sequi in architecto exercitationem, quos quo cupiditate similique veniam. Consequatur quo nisi recusandae repellendus maiores fuga ut quia mollitia quibusdam. Accusamus?</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        Desenvolvido por Neto Vieira
+    </footer>
+    <div id="bola"></div>
+
+</body>
+
+<title>Borda Personalizada</title>
+    <style>
+        h1 {
+            border: 15px solid black; 
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 27px;
+            border-image-repeat: repeat;
+            /*short hand*/
+            border-image: url('boda.png') 27px repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+</body>
+
+Desafio05
+
+<h1>Minhas redes sociais</h1>
+<body>
+    <h2>Quem sou eu?</h2>
+    <img src="perfil.png" alt="perfil">
+    <p>Meu nome é <strong>Neto</strong>, tenho 28</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellat atque fuga dolorum ut, animi quisquam consequuntur fugiat quod enim corporis culpa tenetur temporibus debitis minus assumenda, ipsam laudantium officiis!</p>
+    <h2>Quer falar comigo?</h2>
+    <p><img src="icone-youtube.png" alt="imgyoutube">/<a href="https://www.youtube.com/channel/UCcNqzMLnGgfA12xsVsRVsqQ" target="_blank" rel="external">NetoVieira</a> -Se inscreve lá no meu canal!</p>
+    
+    <p><img src="icone-twitter.png" alt="imgtwitter"><a href="https://twitter.com/cBaiter046"> /cBaiter046  </a> -Me segue lá no twitter!</p>
+    
+    <p><img src="icone-instagram.png" alt="imginsta"><a href="https://www.instagram.com/neto.vieira/">neto.vieira</a> -Me segue no insta!</p>
+    
+</body>
+
+Desafio06
+
+<title>Tags em HTML</title>
+</head>
+<h1>Tags em HTML</h1>
+<body>
+    <p>Em HTML, podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag deverá utilizar em cada caso.</p>
+    <ul>
+        <li><abbr title="Use a tag &lt;p&gt;">Parágrafos</abbr></li>
+        <li><abbr title="Use a tag &lt;h1&gt; ... h6">Títulos</abbr></li>
+        <li><abbr title="Use a tag &lt;img&gt;">Imagens</abbr></li>
+        <li><abbr title="Use a tag &lt;abbr&gt;">Abreviações</abbr></li>
+        <li><abbr title="Use a tag &lt;code&gt;">Códigos-fonte</abbr></li>
+        <li><abbr title="Use as &lt;ol&gt; e &lt;il&gt;">Listas numeradas</abbr></li>
+        <li><abbr title="Use as tags &lt;ul&gt; e &lt;li&gt;">Lista com demarcadores</abbr></li>
+    </ul>
+    
+</body>
+
+Desafio09
+
+ <title>Vídeos</title>
+</head>
+<body style="background-color: rgb(54, 52, 52);">
+    <h1 style="color: aliceblue;">Vídeos legais para assistir</h1>
+    <a href="cursos/cursohtml.html" target="_self" rel="next"><img src="midia/thumb-html.png" alt="html5"></a>
+    <a href="cursos/cursojavascript.html" target="_self" rel="next"><img src="midia/thumb-js.png" alt="javascript"></a>
+    <a href="cursos/cursohadware.html" target="_self" rel="next"><img src="midia/thumb-hardware.png" alt="hardware"></a>
+    <a href="cursos/cursopython.html" target="_self" rel="next"><img src="midia/thumb-python.png" alt="python"></a>
+</body>
+
+<title>Curso hardware</title>
+</head>
+<body style="background-color: rgb(54, 52, 52);">
+    <h1 style="color: aliceblue;">Curso de Wardware</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iT6E92Kt38o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a href="https://www.youtube.com/watch?v=iT6E92Kt38o&list=PLHz_AreHm4dn1JHgN9wpbIUhzZmycYQXW" target="_blank" rel="external">
+        <p style="color: aliceblue;">Veja o curso completo</p>
+    </a>
+    <a href="../index.html"><img src="../midia/voltar.png" alt="voltar"></a>
+
+
+Variáveis em CSS:
+
+:root {
+--cor0: #c5ebd6;
+--cor1: #83e1ad;
+--cor2: #3ddc84;
+--cor3: #2fa866;
+--cor4: #1a5c37;
+--cor5: #063d1e;
+
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: 'Bebas Neue', cursive;
+--fonte-android: 'Android', cursive;
+
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor4);
+}
+
+nav {
+    background-color: var(--cor5);
+}
+
+header  h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+
+
+
+
+
+
+

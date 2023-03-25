@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p>Utilizamos a tag 'video' e o parâmetro 'source:type'. De preferência utiliza-se o mesmo video com formatos diferentes, porque cada navegador tem suas compatibilidades com cada arquivo. E ele vai executando um de cada vez na ordem em que foi escrito até achar um compatível com o navegador. O parâmetro 'controls' mostra as opções de pause, volume e etc. A tag 'poster' adiciona uma thumbnail.</p>
+    
+    <video width="560" controls autoplay loop>
+       <source src="midia/video.mp4" type="video/mp4">
+       <source src="midia/video.m4v" type="video/m4p">
+       <source src="midia/video.ogv" type="video/ogg">
+       <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Para inserir vídeos externos basta clicar em compartilhar e depois incorporar</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/273764697?h=113c558fea&portrait=0" width="560" height="238" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+    
+</body>
+</html>

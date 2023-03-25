@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e dimunua o tamanho do seu navegador.</p>
+    <p>Usando a tag 'picture' pode-se adicionar uma imagem com a tag 'img'
+    Depois usa-se a tag 'source:media:type',no parametro de 'media' usa-se
+    o max-width(vem o min como padrão), e deixa '1050px' que é o tamanho máximo de uma imagem de 'tamanho m', mais que isso altomaticamente a imagem será 'tamanho g' (imagem original) na barra de rolagem do site, e se for 'max width 750', automaticamente muda para a 'imagem p'.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>Utilizamos a tag 'audio' e em src o nome do arquivo, o parâmetro 'controls' mostra as opções de volume, pause etc. O parâmetro 'autoplay' toca o áudio assim que a página é carregada</p>
+    <audio src="midia/Ringside - Dyalla.mp3"controls ></audio>
+
+    
+    
+</body>
+</html>

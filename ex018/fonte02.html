@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(fonts/love.larry.ttf.ttf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'Love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Para utilizar fontes baixadas, utiliza-se na tag 'style' o @font-face, dentro da url() o nome do arquivo em txt e o format().</p>
+    <p>Tipos de format(): opentype(otf), truetype(ttf), embedded-opentype, truetype-att (Apple Advanced Typography) e svg. Pode-se colocar mais de uma url.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt commodi fugiat mollitia minima laudantium soluta amet temporibus ullam aperiam accusantium sit molestias, cupiditate, consequatur, unde voluptatum impedit delectus quam autem.</p>
+    
+</body>
+</html>

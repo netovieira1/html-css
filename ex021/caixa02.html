@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(184, 182, 182);
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        h1 {
+            box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.301);
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 9px 0 rgba(0, 0, 0, 0.384);
+        }
+        article {
+            background-color: lightgrey;
+        }
+        article > aside {
+            background-color: rgb(128, 128, 128);
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+            font-size: 12px;
+            font-style: italic;
+            
+        }
+        
+        nav {
+            background-color: darkgrey;
+            color: white;
+            box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.301);
+        }
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(133, 8, 8);
+        }
+        nav > a:hover {
+            color: white;
+            background-color: darkgray;
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1>Meu Site</h1>
+        
+        <nav>
+            <a href="#">Esporte</a>
+            <a href="#">Política</a>
+            <a href="#">Tecnologia</a>
+            <a href="#">Saúde</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Tags de um Site</h2>
+                <p>Todo site começa com cabeçalho, conteúdo e radapé, portanto utilizamos as seguintes tags respectivamentes: "header", "main" e "footer".</p>
+                <p>O cabeçalho(header) se começa pelo título 'h1' e por links de navegação, para isso utilizamos a tag 'nav(navigation) para os menus.</p>
+                <p>O conteúdo principal(main) pode-se colocar várias tags sem ordem específicas, as mais comuns são: "section", "article", "aside"(aside é um conteúdo periférico ao artigo). Artigos podem conter títulos, um "h2", por exemplo. Pode conter "articles" dentro de "section" e vice e versa.</p>
+                <p>CSS: Para colocar sombras nas boxes utilizamos o "boxshadow " representado da seguinte maneira: boxshadow: 2px 2px 6px 1px black; ou seja, 2px para os sombreamento horizontal(valor negativo pra esquerda, positivo direita), vertical(valor negativo pra cima, positivo pra baixo), px para o embaçamento(blur) e 1px para o espalhamento(spread) da sombra na cor black. É sempre bom utilizar a transparência na sombra.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut sequi in architecto exercitationem, quos quo cupiditate similique veniam. Consequatur quo nisi recusandae repellendus maiores fuga ut quia mollitia quibusdam. Accusamus?</p>
+                <aside>
+                    Artigo escrito por José da Silva
+                </aside>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        Desenvolvido por Neto Vieira
+    </footer>
+    <div id="bola"></div>
+
+</body>
+</html>

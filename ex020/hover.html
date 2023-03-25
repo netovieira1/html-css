@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover {
+            background-color: red;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+    <h2>Hover</h2>
+    <p>Existe um estado (Pseudo-classe) chamado "hover" (hover é uma Pseudo-classe que é compatível com vários elementos), que significa: "quando eu passar o mouse por cima", quando estamos com alguma coisa por cima dele. Exemplo: div:hover{background-color: brown;}</p>
+    <p>Uma coisa legal que pode ser feita é inserir parágrafos (<p>) dentro de div's. Isso é enquadrado como um elemento dentro de outro elemento, e nesses casos, o elemento que está dentro é considerado " filho " ( children ) daquele que está fora (pai).
+
+        Em seletores CSS, se quisermos personalizar os elementos que estão dentro de outros elementos ( children ), devemos indicar o elemento "pai" e usar o símbolo de maior " > " para indicar o elemento filho ( children ) imediato a ele. Exemplo:
+        
+        div > p {
+                    display: none;
+                }
+        
+        A propriedade de estilo " display " com o valor " none " do exemplo acima faz com que os parágrafos que estejam dentro de div's ( ">" children ) fiquem com sua exibição oculta. Algo interessante que pode ser feito após isso, utilizando a Pseudo-Classe " hover ", é fazer com que o texto escondido apareça ao passarmos o mouse em cima da div.
+        
+        Para isso, abrimos um seletor para a div com a Pseudo-Classe hover (div:hover) e indicamos o seu filho (p) com o símbolo " > ", exemplo: " div:hover > p { }" e inserimos dentro a Propriedade de Estilo " display " com o valor " block ". Dessa forma, ao passarmos o mouse sobre a div, o texto escondido contido na tag "p" filho irá aparecer. Exemplo:
+        
+        div:hover > p {
+                    display: block;
+                    color: white;
+                    background-color: red;
+                    width: 300px;
+                }</p>
+</body>
+</html>
