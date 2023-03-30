@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem de fundo</title>
+    <title>Fundo fixo de Tela</title>
     <style>
         body {
-            background-color: black;
+            /*background-color: black;
             height: 100vh;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
+            background-attachment: fixed;
+            
+            Shorthand - background
+            color > image > position/size > repeat > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat  fixed;
+            
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 20px;
             margin: auto;
             border-radius: 15px;
@@ -28,6 +36,12 @@
 <body>
     <main>
         <h1>Teste de fundo</h1>
+        <p>Para uma imagem de fundo ficar bem ajustada é um importante utilizar o 'height: 100vh', 'background-position: center center'. O 'background-size: cover(cobre a tela inteira)' juntamente com 'background-attachment: fixed' faz com que a imagem de fundo se torne fixa mesmo utilizando a rolagem tanto vertical como horizontal.</p>
+        <p>ordem para shorthand de background: color > image > position/size > repeat > attachment. Ex: background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat  fixed;</p>
+        <h2>Teste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis blanditiis cumque aperiam impedit! Repellendus eius pariatur, cupiditate nemo, excepturi consequuntur assumenda omnis quisquam rerum quia officia deserunt molestiae similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore molestias officia dicta culpa facere incidunt minima veniam similique eligendi alias eveniet iusto, iure omnis qui doloribus voluptatibus in doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laborum ipsum nulla necessitatibus autem, est minus consequatur. Vel ad, officiis atque dignissimos quos recusandae laborum aut unde doloribus velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis blanditiis cumque aperiam impedit! Repellendus eius pariatur, cupiditate nemo, excepturi consequuntur assumenda omnis quisquam rerum quia officia deserunt molestiae similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore molestias officia dicta culpa facere incidunt minima veniam similique eligendi alias eveniet iusto, iure omnis qui doloribus voluptatibus in doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laborum ipsum nulla necessitatibus autem, est minus consequatur. Vel ad, officiis atque dignissimos quos recusandae laborum aut unde doloribus velit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis blanditiis cumque aperiam impedit! Repellendus eius pariatur, cupiditate nemo, excepturi consequuntur assumenda omnis quisquam rerum quia officia deserunt molestiae similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore molestias officia dicta culpa facere incidunt minima veniam similique eligendi alias eveniet iusto, iure omnis qui doloribus voluptatibus in doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laborum ipsum nulla necessitatibus autem, est minus consequatur. Vel ad, officiis atque dignissimos quos recusandae laborum aut unde doloribus velit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis blanditiis cumque aperiam impedit! Repellendus eius pariatur, cupiditate nemo, excepturi consequuntur assumenda omnis quisquam rerum quia officia deserunt molestiae similique. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore tempore molestias officia dicta culpa facere incidunt minima veniam similique eligendi alias eveniet iusto, iure omnis qui doloribus voluptatibus in doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae laborum ipsum nulla necessitatibus autem, est minus consequatur. Vel ad, officiis atque dignissimos quos recusandae laborum aut unde doloribus velit.</p>
     </main>
 </body>
